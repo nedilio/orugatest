@@ -9,30 +9,35 @@
 	<div class="container">
 	<h1>formulario concurso</h1>
 		<form>
-		  <div class="form-group">
-		    <!-- <label for="exampleInputEmail1">Email address</label> -->
-		    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" required>
-		  </div>
-		  <div class="form-group">
-		    <!-- <label for="exampleInputPassword1">Password</label> -->
-		    <input type="number" class="form-control" id="cedula" min="1" max="99999999" placeholder="Cedula de Identidad" required>
-		    <!-- <div class="radio"> -->
-			  <label>
-			    <input type="radio" name="nacionalidad" id="venezolano" value="option1" required>
-			    V
-			  </label>
-			<!-- </div> -->
-			<!-- <div class="radio"> -->
-			  <label>
-			    <input type="radio" name="nacionalidad" id="venezolano" value="option1">
-			    E
-			  </label>
-			<!-- </div> -->
-		  </div>
-		  <div class="form-group">
-		  	Fecha de Nacimiento: <input type="date" id="fechadenac" required>
-		  </div>
-		  <p id="mensaje"></p>
+			<div class="row">
+				<div class="form-group col-sm-6">
+				  <!-- <label for="exampleInputEmail1">Email address</label> -->
+				  <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" required>
+				</div>
+				<div class="form-group col-sm-4">
+				  <!-- <label for="exampleInputPassword1">Password</label> -->
+				  <input type="number" class="form-control" id="cedula" min="1" max="99999999" placeholder="Cedula de Identidad" required>
+				  <div class="col-sm-1">
+						<label>
+						    <input type="radio" name="nacionalidad" id="venezolano" value="option1" required>
+							    V
+					  </label>
+    			  </div>
+				  <div class="col-sm-1">
+						<label>
+							 <input type="radio" name="nacionalidad" id="venezolano" value="option1">
+							    E
+						</label>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-6">
+					Fecha de Nacimiento: <input type="date" id="fechadenac" required>
+					<p id="mensaje"></p>
+				</div>
+			</div>
+		  
 		  <div class="form-group">
 		  	<input type="text" class="form-control" id="titulo" placeholder="Titulo de la Obra">
 		  </div>
@@ -42,9 +47,9 @@
 		  <div class="form-group">
 		    <!-- <label for="exampleInputFile">File input</label> -->
 		    <input type="file" id="exampleInputFile" required>
-		    <p class="help-block">Example block-level help text here.</p>
+		    <p class="help-block">Imagen jpg max 600kb</p>
 		  </div>
-		  <button type="submit" class="btn btn-default">Submit</button>
+		  <button type="submit" class="btn btn-default">Enviar</button>
 		</form>		
 	</div>
 
