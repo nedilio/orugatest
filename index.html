@@ -29,8 +29,9 @@
 			<!-- </div> -->
 		  </div>
 		  <div class="form-group">
-		  	<input type="date" required>Fecha de Nacimiento
+		  	<input type="date" id="fechadenac" required>Fecha de Nacimiento
 		  </div>
+		  <p id="mensaje"></p>
 		  <div class="form-group">
 		  	<input type="text" id="titulo" placeholder="Titulo de la Obra">
 		  </div>
@@ -48,5 +49,15 @@
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script>
+		$( "#fechadenac" ).blur(function() {
+  			var fecha = $("#fechadenac").value;
+  			var datevar = new Date (fecha);
+  			var year = datevar.getFullYear();
+  			console.log(year);
+  			$("#mensaje").html("My new text!");
+		});
+
+	</script>
 </body>
 </html>
