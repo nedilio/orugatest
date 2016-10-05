@@ -42,8 +42,24 @@ echo '<p>Descripcion de la obra: '.$descripcion.'</p>';
 $archivo = $_POST['archivo'];
 echo '<p>Archivo: '.$archivo.'</p>';
 
+// $file = rand(1000,100000)."-".$_FILES['archivo']['name'];
+//     $file_loc = $_FILES['archivo']['tmp_name'];
+//  $file_size = $_FILES['archivo']['size'];
+//  $file_type = $_FILES['archivo']['type'];
+//  $folder="uploads/";
+ 
+//  // new file size in KB
+//  $new_size = $file_size/1024;  
+//  // new file size in KB
+ 
+//  // make file name in lower case
+//  $new_file_name = strtolower($file);
+//  // make file name in lower case
+ 
+//  $final_file=str_replace(' ','-',$new_file_name);
 
-$query = "INSERT INTO concursantes (nombreapellido, cedula, nacionalidad, titulo, descripcion, archivo) VALUES ('$nombre', '$cedula', '$nacionalidad', '$titulo', '$descripcion', NULL)";
+// Pasando los input al query
+$query = "INSERT INTO concursantes (nombreapellido, cedula, nacionalidad, fechanac, titulo, descripcion, archivo) VALUES ('$nombre', '$cedula', '$nacionalidad', '$fechadenac', '$titulo', '$descripcion', '$archivo')";
 $retval=mysql_query($query,$link);
 
  if(! $retval ) {

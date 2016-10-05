@@ -55,42 +55,6 @@
 		</form>		
 	</div>
 
-	<div>
-<!-- <?php
-// Conectar a MySQL
-$link = mysql_connect('localhost', 'root', 'root');
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
-echo '<p>Conectado a </p>';
-
-// Conectar a la base de datos (concurso)
-$db_selected = mysql_select_db('concurso', $link);
-if (!$db_selected) {
-    die ('Can\'t use foo : ' . mysql_error());
-}
-echo '<p>Conectado a la base de datos: concurso</p>';
-
-$sql = "SELECT nombreapellido, cedula, nacionalidad FROM concurso";
-$result = $conn->query($sql);
-
-$sql = "SELECT id, firstname, lastname FROM MyGuests";
-$result = $conn->query($sql);
-echo $result;
-if ($result->num_rows > 0) {
-     // output data of each row
-     while($row = $result->fetch_assoc()) {
-         echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
-     }
-} else {
-     echo "0 results";
-}
-// Cerrando conección
-mysql_close($link);
-?> -->
-
-	</div>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script>
